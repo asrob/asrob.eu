@@ -13,6 +13,9 @@ googleAnalytics = "UA-35685224-1"
 
 [params]
 
+  author = "Peter Borsa"
+  descrition = "Peter Borsa's personal website."
+
   # Images settings
   # Icons, backgrounds and avatars folders are placed in theme's static/images folder.
   # You may place your images in corresponding folders and then set only filenames below to
@@ -21,11 +24,11 @@ googleAnalytics = "UA-35685224-1"
   # Site icons
   favicon_ico = "favicon.ico"
   favicon_ico_sizes = "16x16 32x32"
-  appleicon = "apple.png"
+  appleicon = "apple-touch-icon.png"
 
   # Additional options to supplement icons served
-  #favicon_png = "favicon.png"
-  #favicon_png_sizes = "96x96"
+  favicon_png = "favicon.png"
+  favicon_png_sizes = "32x32"
   #favicon_svg = "favicon.svg"
 
   # Link custom assets relative to /static
