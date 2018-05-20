@@ -18,7 +18,7 @@ pygmentscodefencesguesssyntax = true
 
     # wether you want to hide copyright and credits in the footer
     hideCredits = false
-    hideCopyright = false
+    hideCopyright = true
 
 # Social links
 [[params.social]]
