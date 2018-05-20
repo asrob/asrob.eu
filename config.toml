@@ -1,148 +1,39 @@
-# Site settings
-baseurl = "https://asrob.eu"
-languageCode = "en-US"
+baseURL = "https://asrob.eu"
+languageCode = "en-us"
 title = "asrob.eu"
-theme = "hugo-identity-theme"
-themesDir = "themes"
 
-# Disable unnecessary kinds
-disableKinds = ["page", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT", "404"]
+theme = "coder"
 
-# Enter your tracking code to enable Google Analytics
-googleAnalytics = "UA-35685224-1"
+canonifyurls = true
+
+pygmentsstyle = "b2"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
 
 [params]
+    author = "Peter Borsa"
+    info = "DevOps guy"
+    description = "Peter Borsa's personal website"
+    keywords = "blog,developer,devops,personal"
 
-  author = "Peter Borsa"
-  descrition = "Peter Borsa's personal website."
+    # wether you want to hide copyright and credits in the footer
+    hideCredits = false
+    hideCopyright = false
 
-  # Images settings
-  # Icons, backgrounds and avatars folders are placed in theme's static/images folder.
-  # You may place your images in corresponding folders and then set only filenames below to
-  # change page's appearance
-
-  # Site icons
-  favicon_ico = "favicon.ico"
-  favicon_ico_sizes = "16x16 32x32"
-  appleicon = "apple-touch-icon.png"
-
-  # Additional options to supplement icons served
-  favicon_png = "favicon.png"
-  favicon_png_sizes = "32x32"
-  #favicon_svg = "favicon.svg"
-
-  # Link custom assets relative to /static
-  #custom_js  = [""]
-  #custom_css = ["background.css", "icons.css"]
-
-  # Customization switches
-  # Overwrite FontAwesome: see icons.css
-  #custom_icons = true
-  # Overwrite background: see background.css
-  #custom_background = true
-
-  # Personal data
-  [params.personal]
-    # If name is not set, author is used
-    name = "Peter Borsa"
-    # Avatars can be written to images/avatars/
-    avatar = "peter.png"
-#    position = "DevOps"
-    livesIn = "[Berettyóújfalu, Hungary](https://www.google.hu/maps/place/Beretty%C3%B3%C3%BAjfalu/@47.2046681,21.4344009,12z/data=!3m1!4b1!4m5!3m4!1s0x4746f910b75a54bd:0x400c4290c1e1490!8m2!3d47.2196438!4d21.5362811?hl=en)"
-    scope = [
-        "Founder of [asrob.eu](https://asrob.eu)",
-        "DevOps at [Integral Vision](https://integralvision.hu)",
-        "Open Source community member at [Drupal](https://www.drupal.org) and [Fedora](https://getfedora.org)",
-        "[Krav Maga Global](http://krav-maga.com) trainee"
-      ]
-    # biography = """Peter Borsa is plain awesome. He worked at Corp A and B and is open for new work.
-# Even new lines and other markdown styles are working within the bio."""
-
-  # Contact form settings
-
-  [params.contact]
-    # Since this template is static, the contact form uses www.formspree.io as a
-    # proxy. The form makes a POST request to their servers to send the actual
-    # email. Visitors can send up to a 1000 emails each month for free.
-    #
-    # What you need to do for the setup?
-    #
-    # - set your email address under 'email' below
-    # - upload the generated site to your server
-    # - send a dummy email yourself to confirm your account
-    # - click the confirm link in the email from www.formspree.io
-    # - you're done. Happy mailing!
-
-    email = "peter@asrob.eu"
-
-    # It is possible to substitute formspring with other providers
-    # as an example the mailout plugin from caddy.
-    # Provide the post URL for the form and depending on the provider
-    # add some custom JS script to finish the implementation.
-
-    #postURL = "https://example.com/mailout/"
-
-    enable = false
-    title = "Touch Me!"
-    namePlaceholder = "Name"
-    emailPlaceholder = "Email"
-    messagePlaceholder = "Message"
-    buttonText = "Send it"
-    success = "Thank you for contacting me."
-    error = "Message could not be send."
-
-    # Google invisible captcha
-    #[params.contact.captcha]
-    sitekey = "6LedRCIUAAAAALsricmOn041vb3c8Pg6ztccLS7Z"
-
-
-    # Add optional form fields to identify contact forms.
-    #[[params.contact.fields.hidden]]
-    #  name = "someID"
-    #  value = "example.com"
-
-    #[[params.contact.fields.hidden]]
-    # Special values for name such as "page" and "site" will be autofilled
-    #  name = "page"
-
-  # Social settings
-  # You may change these with your social links or add others
-
-  [[params.social]]
-    title = "Linkedin"
-    icon = "fa-linkedin"
-    link = "https://www.linkedin.com/in/asrob/"
-
-  [[params.social]]
-    title = "Facebook"
-    icon = "fa-facebook"
-    link = "https://www.facebook.com/asrob/"
-
-  [[params.social]]
-    title = "Twitter"
-    icon = "fa-twitter"
-    link = "https://twitter.com/peter_borsa"
-
-  [[params.social]]
-    title = "Instagram"
-    icon = "fa-instagram"
-    link = "https://instagram.com/peter_borsa"
-
-
-  # Footer settings
-  [params.footer]
-    # If copyright is not set, author is used
-    copyright = "Peter Borsa"
-
-  # Page license
-  [params.license]
-    link = "https://creativecommons.org/licenses/by-sa/4.0/legalcode"
-    name = "CC-BY-SA-4.0"
-
-  # Credits
-  [[params.credits]]
-    # Title is used as URL text
-    title = "HTML5UP"
-    # Text will be used to explain the credit
-    text = "Design by"
-    link = "https://html5up.net"
+# Social links
+[[params.social]]
+    name = "Github"
+    weight = 1
+    url = "https://github.com/asrob/"
+[[params.social]]
+    name = "Twitter"
+    weight = 2
+    url = "https://twitter.com/peter_borsa/"
+[[params.social]]
+    name = "LinkedIn"
+    weight = 3
+    url = "https://www.linkedin.com/in/asrob/"
+[[params.social]]
+    name = "Facebook"
+    weight = 4
+    url = "https://www.facebook.com/asrob/"
