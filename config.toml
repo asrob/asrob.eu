@@ -4,8 +4,6 @@ title = "asrob.eu"
 
 theme = "coder"
 
-canonifyurls = true
-
 pygmentsstyle = "b2"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
@@ -37,6 +35,8 @@ pygmentscodefencesguesssyntax = true
     name = "Facebook"
     weight = 4
     url = "https://www.facebook.com/asrob/"
+
+# Privacy settings
 [privacy]
   [privacy.disqus]
     disable = true
