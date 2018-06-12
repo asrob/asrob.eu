@@ -35,6 +35,8 @@ pygmentscodefencesguesssyntax = true
     name = "Facebook"
     weight = 4
     url = "https://www.facebook.com/asrob/"
+
+# Privacy settings
 [privacy]
   [privacy.disqus]
     disable = true
